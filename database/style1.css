@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image:url(https://images.pexels.com/photos/1172849/pexels-photo-1172849.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+ ;
+ background-size: cover;
+ 
+}
+
+body{
+    font-family: cursive;
+    /* backgr   ound: wheat; */
+    
+  
+}
+.container{
+    width: 80%; 
+
+  
+}
+header{
+    /* height: 90px; */
+    background-color: #333;
+    padding: 20px;
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+.header-content{
+    display: flex;
+    justify-content:space-between ;
+    align-items:center;
+}
+
+.header-content .logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+nav li a{
+    display: block;
+    color: #fff;
+    min-width:50px ;
+    /* background: lightcoral; */
+    padding: 5px;
+    margin: 0 5px ;
+    text-decoration: none;
+
+}
+
+/***********form*******/
+
+.section-form{
+    position:fixed;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    background-color: burlywood;
+    /* line-height: 5px; */
+    box-shadow: -16px -3px 21px 5px rgba(0,0,0,0.73);
+    border-radius: 20px;
+}
+.section-form h2{
+    font-family:cursive;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: rgb(136, 131, 63);
+}
+
+.section-form form input{
+    padding: 5px;
+  display: block;
+  width: 80%;
+  height: 100%;
+    border: 1px solid gray;
+    font-family: 'Oswald';
+    outline: 0;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+.section-form form input[type=submit]{
+    background: lightgreen;
+    font-size: 25px;
+    color: darkcyan;
+    height: auto;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+
+}
+.section-form form input[type=submit]:hover{
+    opacity: 0.8;
+}

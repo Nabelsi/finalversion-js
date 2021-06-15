@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+    <head>
+
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Progammieren mit JS">
+        <meta name="keywords" content="">
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+
+    <body class="darkmode">
+        <!-- <header>
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">Suduko Game</a>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="login.html">sign in</a>
+                            </li>
+                            <li>
+                                <a href="register.html">sign up</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </header> -->
+
+        <div id="controlbtn" tabindex="1">
+            <input type="button" id = "btnEasy" value="Easy"> 
+            <input type="button" id = "btnMedium" value="Medium">
+            <input type="button" id = "btnHard" value="Hard">
+        </div>
+        <div class="startdiv" tabindex="2">
+            <input type="button" id ="resetbtn" value="Zurücksetzen" >
+            <input type="button" id ="btnStart" value="Sudoku Spielen" >               
+
+        </div>
+        <div id="info" tabindex="3">
+            <div>
+            <label for="time">Zeit :</label>
+            <input id = "time" type="text" name="" id="time" value="0" disabled>
+             
+
+            </div>
+               
+            <div tabindex="4">
+                <label for="life">Leben :</label>
+                <input id = "life" type="text" name="" id="life" value="3" disabled>
+        
+            </div>
+        </div>
+    
+
+        <div id="board" tabindex="5">
+            
+                <div id="c00" tabindex="6"></div>
+                <div id="c01" tabindex="7"></div>
+                <div id="c02" tabindex="8"></div>
+                <div id="c03" tabindex="9"></div>
+                <div id="c04" tabindex="10"></div>
+                <div id="c05" tabindex="11"></div>
+                <div id="c06" tabindex="12"></div>
+                <div id="c07" tabindex="13"></div>
+                <div id="c08" tabindex="14"></div>
+               
+       
+
+                <div id="c10" tabindex="15"></div>
+                <div id="c11" tabindex="16"></div>
+                <div id="c12" tabindex="17"></div>
+                <div id="c13" tabindex="18"></div>
+                <div id="c14" tabindex="19"></div>
+                <div id="c15" tabindex="20"></div>
+                <div id="c16" tabindex="21"></div>
+                <div id="c17" tabindex="22"></div>
+                <div id="c18" tabindex="23"></div>
+
+
+        
+                
+                <div id="c20" tabindex="24"></div>
+                <div id="c21" tabindex="25"></div>
+                <div id="c22" tabindex="26">S</div>
+                <div id="c23" tabindex="27"></div>
+                <div id="c24" tabindex="28"></div>
+                <div id="c25" tabindex="29"></div>
+                <div id="c26" tabindex="30"></div>
+                <div id="c27" tabindex="31"></div>
+                <div id="c28" tabindex="32"></div>
+
+
+
+            <!-- **************** -->
+
+            
+
+
+                <div id="c30" tabindex="33"></div>
+                <div id="c31" tabindex="34"></div>
+                <div id="c32" tabindex="35"></div>
+                <div id="c33" tabindex="36">u</div>
+                <div id="c34" tabindex="37"></div>
+                <div id="c35" tabindex="38"></div>
+                <div id="c36" tabindex="39"></div>
+                <div id="c37" tabindex="40"></div>
+                <div id="c38" tabindex="41"></div>
+
+     
+                <div id="c40" tabindex="42"></div>
+                <div id="c41" tabindex="43"></div>
+                <div id="c42" tabindex="44"></div>
+                <div id="c43" tabindex="45"></div>
+                <div id="c44" tabindex="46">d</div>
+                <div id="c45" tabindex="47"></div>
+                <div id="c46" tabindex="48"></div>
+                <div id="c47" tabindex="49"></div>
+                <div id="c48" tabindex="50"></div>
+
+
+
+                <div id="c50" tabindex="51"></div>
+                <div id="c51" tabindex="52"></div>
+                <div id="c52" tabindex="53"></div>
+                <div id="c53" tabindex="54"></div>
+                <div id="c54" tabindex="55"></div>
+                <div id="c55" tabindex="56">o</div>
+                <div id="c56" tabindex="57"></div>
+                <div id="c57" tabindex="58"></div>
+                <div id="c58" tabindex="59"></div>
+
+
+
+
+                <!-- **************** -->
+
+    
+                    <div id="c60" tabindex="60"></div>
+                    <div id="c61" tabindex="61"></div>
+                    <div id="c62" tabindex="62"></div>
+                    <div id="c63" tabindex="63"></div>
+                    <div id="c64" tabindex="64"></div>
+                    <div id="c65" tabindex="65"></div>
+                    <div id="c66" tabindex="66">k</div>
+                    <div id="c67" tabindex="67"></div>
+                    <div id="c68" tabindex="68"></div>
+    
+
+                    <div id="c70" tabindex="69"></div>
+                    <div id="c71" tabindex="70"></div>
+                    <div id="c72" tabindex="71"></div>
+                    <div id="c73" tabindex="72"></div>
+                    <div id="c74" tabindex="73"></div>
+                    <div id="c75" tabindex="74"></div>
+                    <div id="c76" tabindex="75"></div>
+                    <div id="c77" tabindex="76">u</div>
+                    <div id="c78" tabindex="77"></div>
+ 
+
+                    
+                    <div id="c80" tabindex="78"></div>
+                    <div id="c81" tabindex="79"></div>
+                    <div id="c82" tabindex="80"></div>
+                    <div id="c83" tabindex="81"></div>
+                    <div id="c84" tabindex="82"></div>
+                    <div id="c85" tabindex="83"></div>
+                    <div id="c86" tabindex="84"></div>
+                    <div id="c87" tabindex="85"></div>
+                    <div id="c88" tabindex="86"></div>
+
+
+
+        </div>
+
+    <div id="aside">
+        <div id="n1" class="aside">1</div>
+        <div id="n2" class="aside">2</div>
+        <div id="n3" class="aside">3</div>
+        <div id="n4" class="aside">4</div>
+        <div id="n5" class="aside">5</div>
+        <div id="n6" class="aside">6</div>
+        <div id="n7" class="aside">7</div>
+        <div id="n8" class="aside">8</div>
+        <div id="n9" class="aside">9</div>
+    </div>
+        <p id ="tv" style="color: white; font-size: 25px;"></p>
+            <script src="js/main.js"></script>
+            <script src="js/login.js"></script>
+            <script src="js/register.js"></script>
+
+        </body>
+
+    </html>
